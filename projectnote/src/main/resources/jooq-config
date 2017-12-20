@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration>
+    <!-- Configure the database connection here -->
+    <jdbc>
+        <driver>com.mysql.jbdc.Driver</driver>
+        <url>jdbc:mysql://127.0.0.1/SchoolDB</url>
+        <user>root</user>
+        <password></password>
+    </jdbc>
+    <generator>
+        <database>
+            <name> org.jooq.util.mysql.MySQLDatabase</name>
+            <includes>.*</includes>
+            <excludes />
+            <inputSchema>SchoolDB</inputSchema>
+        </database>
+
+        <generate>
+
+        </generate>
+
+        <target>
+            <packageName>com.tim.projectnote.jooq.gen</packageName>
+            <directory>src/gen/java</directory>
+            <encoding> UTF-8 </encoding>
+        </target>
+    </generator>
+</configuration>
